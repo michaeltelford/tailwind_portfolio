@@ -1,10 +1,19 @@
-import Link from 'next/link'
+import Link from 'next/link';
 
 export default function Nav() {
   return (
     <>
-      <div className='my-3 ml-2 underline text-gray-900 hover:text-blue-700'>
-        <Link href='/'><a>{'<< Home'}</a></Link>
+      <div className='flex my-3 ml-3 underline text-gray-900'>
+        <Link href='/'>
+          <a className='hover:text-blue-700'>{'<< Home'}</a>
+        </Link>
+
+        <a
+          className='ml-auto mr-3 hover:text-blue-700'
+          href='https://github.com/michaeltelford/tailwind_portfolio'
+          target='_blank'>
+            Github
+        </a>
       </div>
       <hr />
     </>
