@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Link from 'next/link'
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -17,7 +17,12 @@ export default function Home() {
         <header className='text-center mb-5'>
           <small>
             Designed by {' '}
-            <a className='underline hover:text-blue-700' href='https://github.com/michaeltelford'>Michael Telford</a>
+            <a
+              className='underline hover:text-blue-700'
+              href='https://github.com/michaeltelford'
+              target='_blank'>
+                Michael Telford
+            </a>
           </small>
         </header>
 
