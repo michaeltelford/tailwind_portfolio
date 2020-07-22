@@ -4,9 +4,9 @@ export default function Shopify() {
   return (
     <>
       <Nav />
-      <main className='flex flex-col bg-yellow-100'>
+      <main className='flex flex-col bg-yellow-100 lg:flex-row'>
         <div className='p-8 mb-4 max-w-screen-md md:w-3/5 md:mx-5'>
-          <h2 className='mb-6 text-green-900 text-4xl font-bold tracking-tighter leading-tight md:text-5xl md:mt-10'>
+          <h2 className='mb-6 text-green-900 text-4xl font-bold tracking-tighter leading-tight md:text-5xl md:mt-10 xl:text-6xl'>
             Build an online business—no matter what business you’re in
           </h2>
 
