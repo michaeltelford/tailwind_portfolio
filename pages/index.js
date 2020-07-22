@@ -26,7 +26,7 @@ export default function Home() {
         </p>
 
         <ul className='underline hover:text-blue-700'>
-          <li><Link href='/shopify'>Shopify Registration</Link></li>
+          <li><Link href='/shopify'><a>Shopify Registration</a></Link></li>
         </ul>
       </main>
     </div>
