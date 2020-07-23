@@ -3,18 +3,18 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className='container mx-auto text-gray-900'>
+    <>
       <Head>
         <title>Tailwind CSS Portfolio</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className='text-center'>
+      <main className='text-gray-900 text-center max-w-screen-sm mx-auto'>
         <h1 className='text-4xl font-semibold mt-5 mb-1'>
           Tailwind Portfolio
         </h1>
 
-        <header className='text-center mb-5'>
+        <header className='mb-5'>
           <small>
             Designed by {' '}
             <a
@@ -27,13 +27,16 @@ export default function Home() {
         </header>
 
         <p className='mb-4'>
-          Click to view a styled component:
+          Click below to view a styled component.
+        </p>
+        <p className='mb-4'>
+          All components are mobile first and fully responsive; so be sure to change the viewport and watch the UI respond accordingly.
         </p>
 
         <ul className='underline hover:text-blue-700'>
           <li><Link href='/shopify'><a>Shopify Registration</a></Link></li>
         </ul>
       </main>
-    </div>
+    </>
   );
 }
