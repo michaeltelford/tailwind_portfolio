@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function Nav() {
+export default function Nav({ inspiredByHref }) {
   return (
     <>
       <div className='flex my-3 ml-3 underline text-gray-900'>
@@ -10,9 +10,9 @@ export default function Nav() {
 
         <a
           className='ml-auto mr-3 hover:text-blue-700'
-          href='https://github.com/michaeltelford/tailwind_portfolio'
+          href={inspiredByHref || ''}
           target='_blank'>
-            Github
+            Inspired By >>
         </a>
       </div>
       <hr />

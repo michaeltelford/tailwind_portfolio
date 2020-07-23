@@ -3,7 +3,7 @@ import Nav from '../components/nav.js';
 export default function Shopify() {
   return (
     <>
-      <Nav />
+      <Nav inspiredByHref='https://www.shopify.com/' />
       <main className='flex flex-col bg-yellow-100 lg:flex-row'>
         <div className='p-8 mb-4 max-w-screen-md md:w-3/5 md:mx-5'>
           <h2 className='mb-6 text-green-900 text-4xl font-bold tracking-tighter leading-tight md:text-5xl md:mt-10 xl:text-6xl'>
@@ -19,7 +19,7 @@ export default function Shopify() {
               type='text'
               placeholder='Enter your email address' />
             <button className='w-full bg-green-700 hover:bg-green-800 text-white font-semibold rounded shadow-lg py-3 xs:w-64 xs:h-12'>
-              Start free trail
+              Start free trial
             </button>
           </form>
 

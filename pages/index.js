@@ -14,7 +14,7 @@ export default function Home() {
           Tailwind Portfolio
         </h1>
 
-        <header className='mb-5'>
+        <div className='mb-5'>
           <small>
             Designed by {' '}
             <a
@@ -24,18 +24,31 @@ export default function Home() {
                 Michael Telford
             </a>
           </small>
-        </header>
+          <br />
+          <small>
+            View the code on {' '}
+            <a
+              className='underline hover:text-blue-700'
+              href='https://github.com/michaeltelford/tailwind_portfolio'
+              target='_blank'>
+                Github
+            </a>
+          </small>
+        </div>
 
-        <p className='mb-4'>
-          Click below to view a styled component.
-        </p>
-        <p className='mb-4'>
-          All components are mobile first and fully responsive; so be sure to change the viewport and watch the UI respond accordingly.
-        </p>
+        <content>
+          <p className='mb-4'>
+            Click below to view a styled component.
+          </p>
 
-        <ul className='underline hover:text-blue-700'>
-          <li><Link href='/shopify'><a>Shopify Registration</a></Link></li>
-        </ul>
+          <p className='mb-6'>
+            All components are mobile first and fully responsive; so be sure to change the viewport and watch the UI respond accordingly.
+          </p>
+
+          <ul className='underline hover:text-blue-700 font-semibold'>
+            <li><Link href='/shopify'><a>Shopify Registration</a></Link></li>
+          </ul>
+        </content>
       </main>
     </>
   );
