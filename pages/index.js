@@ -45,8 +45,14 @@ export default function Home() {
             All components are mobile first and fully responsive; so be sure to change the viewport and watch the UI respond accordingly.
           </p>
 
-          <ul className='underline hover:text-blue-700 font-semibold'>
-            <li><Link href='/shopify'><a>Shopify Registration</a></Link></li>
+          {/* Place any new pages as <li>'s below. */}
+          <ul className='underline font-semibold'>
+            <li className='mb-3 hover:text-blue-700'>
+              <Link href='/shopify'><a>Shopify Registration</a></Link>
+            </li>
+            <li className='mb-3 hover:text-blue-700'>
+              <Link href='/svelte'><a>Svelte Home Page</a></Link>
+            </li>
           </ul>
         </content>
       </main>
