@@ -24,26 +24,54 @@ export default function Svelte() {
   return (
     <>
       <Nav inspiredByHref='https://svelte.dev/' />
-      <main className='text-gray-700'>
+      <main style={{ color: '#444' }}>
         <div className='my-24 mx-12'>
-          <h1 className='uppercase tracking-widest leading-none text-5xl font-medium'>Svelte</h1>
-          <p className='tracking-wider text-xl'>Cybernetically enhanced web apps</p>
+          <h1 className='uppercase tracking-widest leading-none text-5xl font-bold'>
+            Svelte
+          </h1>
+          <p className='tracking-wider text-xl'>
+            Cybernetically enhanced web apps
+          </p>
         </div>
         <div>
-          <div>
-            <h2>Write less code</h2>
-            <p>Build boilerplate-free components using languages you already know — HTML, CSS and JavaScript</p>
-            <a href='#'>learn more -></a>
+          <div
+            className='mx-8 mb-5 p-6 text-white rounded-md cursor-pointer'
+            style={{ backgroundColor: '#ff3e00' }}>
+              <h2 className='text-2xl tracking-wider font-bold pb-3'>
+                Write less code
+              </h2>
+              <p className='pb-3'>
+                Build boilerplate-free components using languages you already know — HTML, CSS and JavaScript
+              </p>
+              <a href='#' className='block text-right text-lg hover:underline'>
+                learn more {'>'}
+              </a>
           </div>
-          <div>
-            <h2>No virtual DOM</h2>
-            <p>Svelte compiles your code to tiny, framework-less vanilla JS — your app starts fast and stays fast</p>
-            <a href='#'>learn more -></a>
+          <div
+            className='mx-8 mb-6 p-6 text-white rounded-md cursor-pointer'
+            style={{ backgroundColor: '#40b3ff' }}>
+              <h2 className='text-2xl tracking-wider font-bold pb-3'>
+                No virtual DOM
+              </h2>
+              <p className='pb-3'>
+                Svelte compiles your code to tiny, framework-less vanilla JS — your app starts fast and stays fast
+              </p>
+              <a href='#' className='block text-right text-lg hover:underline'>
+                learn more {'>'}
+              </a>
           </div>
-          <div>
-            <h2>Truly reactive</h2>
-            <p>No more complex state management libraries — Svelte brings reactivity to JavaScript itself</p>
-            <a href='#'>learn more -></a>
+          <div
+            className='mx-8 mb-6 p-6 text-white rounded-md cursor-pointer'
+            style={{ backgroundColor: '#676778' }}>
+              <h2 className='text-2xl tracking-wider font-bold pb-3'>
+                Truly reactive
+              </h2>
+              <p className='pb-3'>
+                No more complex state management libraries — Svelte brings reactivity to JavaScript itself
+              </p>
+              <a href='#' className='block text-right text-lg hover:underline'>
+                learn more {'>'}
+              </a>
           </div>
           <div className='hidden'>
             <QuickStart />
