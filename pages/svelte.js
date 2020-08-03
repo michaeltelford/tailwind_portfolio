@@ -2,21 +2,30 @@ import Nav from '../components/nav.js';
 
 function QuickStart() {
   return (
-    <>
-      <code>
-        npx degit sveltejs/template my-svelte-project
-        # or download and extract
+    <div className='mx-8'>
+      <div className='p-4 mb-3 bg-gray-100 overflow-x-auto whitespace-no-wrap rounded-md border-2 border-gray-300 text-sm text-gray-600'>
+        <code>
+          npx degit {' '}
+          <a href='#' className='underline hover:font-semibold' style={{ color: '#ff3e00' }}>
+            sveltejs/template
+          </a> my-svelte-project<br />
+          # or download and extract {' '}
+          <a href='#' className='underline hover:font-semibold' style={{ color: '#ff3e00' }}>
+            this .zip file
+          </a><br />
+          cd my-svelte-project<br /><br />
 
-        cd my-svelte-project
-
-        npm install
-        npm run dev
-      </code>
-      <p>
-        See the <a href='#'>quickstart guide</a> for more information.
+          npm install<br />
+          npm run dev
+        </code>
+      </div>
+      <p className='mb-5'>
+        See the <a href='#' className='underline' style={{ color: '#ff3e00' }}>quickstart guide</a> for more information.
       </p>
-      <button>Learn Svelte</button>
-    </>
+      <button className='px-5 py-2 mb-24 text-white rounded-md shadow-lg' style={{ backgroundColor: '#ff3e00' }}>
+        Learn Svelte
+      </button>
+    </div>
   )
 }
 
@@ -61,7 +70,7 @@ export default function Svelte() {
               </a>
           </div>
           <div
-            className='mx-8 mb-6 p-6 text-white rounded-md cursor-pointer'
+            className='mx-8 mb-12 p-6 text-white rounded-md cursor-pointer'
             style={{ backgroundColor: '#676778' }}>
               <h2 className='text-2xl tracking-wider font-bold pb-3'>
                 Truly reactive
@@ -78,10 +87,18 @@ export default function Svelte() {
           </div>
         </div>
         <div>
-          <div>
-            <p>Svelte is a radical new approach to building user interfaces. Whereas traditional frameworks like React and Vue do the bulk of their work in the browser, Svelte shifts that work into a compile step that happens when you build your app.</p>
-            <p>Instead of using techniques like virtual DOM diffing, Svelte writes code that surgically updates the DOM when the state of your app changes.</p>
-            <p><a href='#'>Read the introductory blog post</a> to learn more.</p>
+          <div className='mx-8'>
+            <p className='mb-5'>
+              Svelte is a radical new approach to building user interfaces. Whereas traditional frameworks like React and Vue do the bulk of their work in the browser, Svelte shifts that work into a compile step that happens when you build your app.
+            </p>
+            <p className='mb-5'>
+              Instead of using techniques like virtual DOM diffing, Svelte writes code that surgically updates the DOM when the state of your app changes.
+            </p>
+            <p className='mb-8'>
+              <a href='#' className='underline' style={{ color: '#ff3e00' }}>
+                Read the introductory blog post
+              </a> to learn more.
+            </p>
           </div>
           <div>
             <QuickStart />
