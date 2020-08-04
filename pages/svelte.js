@@ -3,7 +3,7 @@ import Nav from '../components/nav.js';
 function QuickStart() {
   return (
     <>
-      <div className='p-4 mb-3 bg-gray-100 overflow-x-auto whitespace-no-wrap rounded-md border-2 border-gray-300 text-sm text-gray-600'>
+      <div className='p-4 mb-3 bg-gray-100 overflow-x-auto whitespace-no-wrap rounded-md border-2 border-gray-300 text-sm text-gray-600 ml:mb-2'>
         <code>
           npx degit {' '}
           <a href='#' className='underline hover:font-semibold' style={{ color: '#ff3e00' }}>
@@ -19,10 +19,10 @@ function QuickStart() {
           npm run dev
         </code>
       </div>
-      <p className='mb-5'>
+      <p className='mb-5 ml:mb-3'>
         See the <a href='#' className='underline' style={{ color: '#ff3e00' }}>quickstart guide</a> for more information.
       </p>
-      <button className='px-5 py-2 mb-5 text-white rounded-md shadow-lg' style={{ backgroundColor: '#ff3e00' }}>
+      <button className='px-5 py-2 mb-5 text-white rounded-md shadow-lg ml:mb-0' style={{ backgroundColor: '#ff3e00' }}>
         Learn Svelte
       </button>
     </>
@@ -34,7 +34,7 @@ export default function Svelte() {
     <>
       <Nav inspiredByHref='https://svelte.dev/' />
       <main className='mx-8' style={{ color: '#444' }}>
-        <div className='my-24 mx-4'>
+        <div className='mx-4 my-24 ml:my-32'>
           <h1 className='uppercase tracking-widest leading-none font-bold text-5xl sm:text-6xl'>
             Svelte
           </h1>
@@ -42,48 +42,56 @@ export default function Svelte() {
             Cybernetically enhanced web apps
           </p>
         </div>
-        <div className='mb-12'>
-          <div
-            className='mb-5 p-6 text-white rounded-md cursor-pointer'
-            style={{ backgroundColor: '#ff3e00' }}>
-              <h2 className='text-2xl tracking-wider font-bold pb-3'>
-                Write less code
-              </h2>
-              <p className='pb-3'>
-                Build boilerplate-free components using languages you already know — HTML, CSS and JavaScript
-              </p>
-              <a href='#' className='block text-right text-lg hover:underline'>
-                learn more {'>'}
-              </a>
+        <div className='mb-12 ml:flex ml:flex-wrap ml:items-stretch'>
+          <div className='ml:w-1/2'>
+            <div
+              className='flex flex-col justify-between mb-5 p-6 text-white rounded-md cursor-pointer ml:mr-2 ml:h-64 ml:p-10'
+              style={{ backgroundColor: '#ff3e00' }}>
+                <h2 className='text-2xl tracking-wider font-bold pb-3 ml:text-3xl'>
+                  Write less code
+                </h2>
+                <p className='pb-3'>
+                  Build boilerplate-free components using languages you already know — HTML, CSS and JavaScript
+                </p>
+                <a href='#' className='block text-right text-lg hover:underline'>
+                  learn more {'>'}
+                </a>
+            </div>
           </div>
-          <div
-            className='mb-5 p-6 text-white rounded-md cursor-pointer'
-            style={{ backgroundColor: '#40b3ff' }}>
-              <h2 className='text-2xl tracking-wider font-bold pb-3'>
-                No virtual DOM
-              </h2>
-              <p className='pb-3'>
-                Svelte compiles your code to tiny, framework-less vanilla JS — your app starts fast and stays fast
-              </p>
-              <a href='#' className='block text-right text-lg hover:underline'>
-                learn more {'>'}
-              </a>
+          <div className='ml:w-1/2'>
+            <div
+              className='flex flex-col justify-between mb-5 p-6 text-white rounded-md cursor-pointer ml:ml-2 ml:h-64 ml:p-10'
+              style={{ backgroundColor: '#40b3ff' }}>
+                <h2 className='text-2xl tracking-wider font-bold pb-3 ml:text-3xl'>
+                  No virtual DOM
+                </h2>
+                <p className='pb-3'>
+                  Svelte compiles your code to tiny, framework-less vanilla JS — your app starts fast and stays fast
+                </p>
+                <a href='#' className='block text-right text-lg hover:underline'>
+                  learn more {'>'}
+                </a>
+            </div>
           </div>
-          <div
-            className='p-6 text-white rounded-md cursor-pointer'
-            style={{ backgroundColor: '#676778' }}>
-              <h2 className='text-2xl tracking-wider font-bold pb-3'>
-                Truly reactive
-              </h2>
-              <p className='pb-3'>
-                No more complex state management libraries — Svelte brings reactivity to JavaScript itself
-              </p>
-              <a href='#' className='block text-right text-lg hover:underline'>
-                learn more {'>'}
-              </a>
+          <div className='ml:w-1/2'>
+            <div
+              className='flex flex-col justify-between p-6 text-white rounded-md cursor-pointer ml:mb-5 ml:mr-2 ml:h-64 ml:p-10'
+              style={{ backgroundColor: '#676778' }}>
+                <h2 className='text-2xl tracking-wider font-bold pb-3 ml:text-3xl'>
+                  Truly reactive
+                </h2>
+                <p className='pb-3'>
+                  No more complex state management libraries — Svelte brings reactivity to JavaScript itself
+                </p>
+                <a href='#' className='block text-right text-lg hover:underline'>
+                  learn more {'>'}
+                </a>
+            </div>
           </div>
-          <div className='hidden'>
-            <QuickStart />
+          <div className='ml:w-1/2'>
+            <div className='hidden ml:block ml:ml-2'>
+              <QuickStart />
+            </div>
           </div>
         </div>
         <div>
@@ -98,7 +106,7 @@ export default function Svelte() {
               Read the introductory blog post
             </a> to learn more.
           </p>
-          <div>
+          <div className='ml:hidden'>
             <QuickStart />
           </div>
         </div>
