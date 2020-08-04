@@ -35,10 +35,10 @@ export default function Svelte() {
       <Nav inspiredByHref='https://svelte.dev/' />
       <main style={{ color: '#444' }}>
         <div className='my-24 mx-12'>
-          <h1 className='uppercase tracking-widest leading-none text-5xl font-bold'>
+          <h1 className='uppercase tracking-widest leading-none font-bold text-5xl sm:text-6xl'>
             Svelte
           </h1>
-          <p className='tracking-wider text-xl'>
+          <p className='tracking-wider text-xl sm:text-2xl'>
             Cybernetically enhanced web apps
           </p>
         </div>
