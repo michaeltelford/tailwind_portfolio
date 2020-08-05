@@ -22,7 +22,7 @@ function QuickStart() {
       <p className='mb-5 ml:mb-3'>
         See the <a href='#' className='underline' style={{ color: '#ff3e00' }}>quickstart guide</a> for more information.
       </p>
-      <button className='px-5 py-2 mb-5 text-white rounded-md shadow-lg ml:mb-0' style={{ backgroundColor: '#ff3e00' }}>
+      <button className='px-5 py-2 mb-5 text-white rounded-md shadow-lg hover:underline ml:mb-0' style={{ backgroundColor: '#ff3e00' }}>
         Learn Svelte
       </button>
     </>
