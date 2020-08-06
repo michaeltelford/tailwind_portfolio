@@ -33,7 +33,7 @@ export default function Svelte() {
   return (
     <>
       <Nav inspiredByHref='https://svelte.dev/' />
-      <main className='mx-8' style={{ color: '#444' }}>
+      <main className='mx-8 xl:max-w-screen-xl xl:mx-auto xl:px-20' style={{ color: '#444' }}>
         <div className='mx-4 my-24 svelte-ml:my-32'>
           <h1 className='uppercase tracking-widest leading-none font-bold text-5xl sm:text-6xl'>
             Svelte
@@ -42,10 +42,10 @@ export default function Svelte() {
             Cybernetically enhanced web apps
           </p>
         </div>
-        <div className='mb-12 svelte-ml:flex svelte-ml:flex-wrap svelte-ml:items-stretch'>
+        <div className='mb-12 svelte-ml:flex svelte-ml:flex-wrap svelte-ml:items-stretch xl:flex'>
           <div className='svelte-ml:w-1/2'>
             <div
-              className='flex flex-col justify-between mb-5 p-6 text-white rounded-md cursor-pointer svelte-ml:mr-2 svelte-ml:h-64 svelte-ml:p-10'
+              className='flex flex-col justify-between mb-5 p-6 text-white rounded-md cursor-pointer svelte-ml:mr-2 svelte-ml:h-64 svelte-ml:p-10 xl:h-64 xl:mr-5'
               style={{ backgroundColor: '#ff3e00' }}>
                 <h2 className='text-2xl tracking-wider font-bold pb-3 svelte-ml:text-3xl'>
                   Write less code
@@ -60,7 +60,7 @@ export default function Svelte() {
           </div>
           <div className='svelte-ml:w-1/2'>
             <div
-              className='flex flex-col justify-between mb-5 p-6 text-white rounded-md cursor-pointer svelte-ml:ml-2 svelte-ml:h-64 svelte-ml:p-10'
+              className='flex flex-col justify-between mb-5 p-6 text-white rounded-md cursor-pointer svelte-ml:ml-2 svelte-ml:h-64 svelte-ml:p-10 xl:h-64 xl:mr-5'
               style={{ backgroundColor: '#40b3ff' }}>
                 <h2 className='text-2xl tracking-wider font-bold pb-3 svelte-ml:text-3xl'>
                   No virtual DOM
@@ -75,7 +75,7 @@ export default function Svelte() {
           </div>
           <div className='svelte-ml:w-1/2'>
             <div
-              className='flex flex-col justify-between p-6 text-white rounded-md cursor-pointer svelte-ml:mb-5 svelte-ml:mr-2 svelte-ml:h-64 svelte-ml:p-10'
+              className='flex flex-col justify-between p-6 text-white rounded-md cursor-pointer svelte-ml:mb-5 svelte-ml:mr-2 svelte-ml:h-64 svelte-ml:p-10 xl:h-64'
               style={{ backgroundColor: '#676778' }}>
                 <h2 className='text-2xl tracking-wider font-bold pb-3 svelte-ml:text-3xl'>
                   Truly reactive
@@ -94,19 +94,21 @@ export default function Svelte() {
             </div>
           </div>
         </div>
-        <div>
-          <p className='mb-5'>
-            Svelte is a radical new approach to building user interfaces. Whereas traditional frameworks like React and Vue do the bulk of their work in the browser, Svelte shifts that work into a compile step that happens when you build your app.
-          </p>
-          <p className='mb-5'>
-            Instead of using techniques like virtual DOM diffing, Svelte writes code that surgically updates the DOM when the state of your app changes.
-          </p>
-          <p className='mb-8'>
-            <a href='#' className='underline' style={{ color: '#ff3e00' }}>
-              Read the introductory blog post
-            </a> to learn more.
-          </p>
-          <div className='svelte-ml:hidden'>
+        <div className='xl:flex'>
+          <div className='xl:w-1/2'>
+            <p className='mb-5'>
+              Svelte is a radical new approach to building user interfaces. Whereas traditional frameworks like React and Vue do the bulk of their work in the browser, Svelte shifts that work into a compile step that happens when you build your app.
+            </p>
+            <p className='mb-5'>
+              Instead of using techniques like virtual DOM diffing, Svelte writes code that surgically updates the DOM when the state of your app changes.
+            </p>
+            <p className='mb-8'>
+              <a href='#' className='underline' style={{ color: '#ff3e00' }}>
+                Read the introductory blog post
+              </a> to learn more.
+            </p>
+          </div>
+          <div className='svelte-ml:hidden xl:w-1/2'>
             <QuickStart />
           </div>
         </div>
