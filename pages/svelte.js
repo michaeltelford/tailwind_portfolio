@@ -33,12 +33,12 @@ export default function Svelte() {
   return (
     <>
       <Nav inspiredByHref='https://svelte.dev/' />
-      <main className='mx-8 xl:max-w-screen-xl xl:mx-auto xl:px-20' style={{ color: '#444' }}>
+      <main className='mb-12 mx-8 md:mx-12 xl:max-w-screen-xl xl:mx-auto xl:px-20' style={{ color: '#444' }}>
         <div className='mx-4 my-24 svelte-ml:my-32'>
-          <h1 className='uppercase tracking-widest leading-none font-bold text-5xl sm:text-6xl'>
+          <h1 className='uppercase tracking-widest leading-none font-bold text-5xl sm:text-6xl svelte-ml:text-7xl xl:text-7xl'>
             Svelte
           </h1>
-          <p className='tracking-wider text-xl sm:text-2xl'>
+          <p className='tracking-wider text-xl sm:text-2xl svelte-ml:text-3xl xl:text-3xl'>
             Cybernetically enhanced web apps
           </p>
         </div>
