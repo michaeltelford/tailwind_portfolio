@@ -3,8 +3,8 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'xs': '568px',
-        'ml': '900px',
+        'shopify-xs': '568px',
+        'svelte-ml': [{'min': '900px', 'max': '1280px'}],
       },
     },
   },

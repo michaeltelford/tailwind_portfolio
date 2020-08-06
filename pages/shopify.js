@@ -11,14 +11,14 @@ export default function Shopify() {
           </h2>
 
           <form
-            className='flex flex-col mb-5 xs:flex-row'
+            className='flex flex-col mb-5 shopify-xs:flex-row'
             onSubmit={evt => evt.preventDefault()}>
             <input
-              className='w-full border-gray-600 px-4 py-3 mb-2 rounded xs:mr-4'
+              className='w-full border-gray-600 px-4 py-3 mb-2 rounded shopify-xs:mr-4'
               style={{ borderWidth: 1 }}
               type='text'
               placeholder='Enter your email address' />
-            <button className='w-full bg-green-700 hover:bg-green-800 text-white font-semibold rounded shadow-lg py-3 xs:w-64 xs:h-12'>
+            <button className='w-full bg-green-700 hover:bg-green-800 text-white font-semibold rounded shadow-lg py-3 shopify-xs:w-64 shopify-xs:h-12'>
               Start free trial
             </button>
           </form>
